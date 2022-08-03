@@ -1,0 +1,143 @@
+.ServiceDetailedSection {
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100vw;
+}
+
+.ServiceDetailedSection .mainContent {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ServiceDetailedSection .textContent h2 {
+  font-family: 'Quicksand';
+  margin: 0.5rem 0;
+}
+
+.ServiceDetailedSectionReversed .mainContent {
+  flex-direction: row-reverse;
+}
+
+.ServiceDetailedSectionVerticalReversed .mainContent {
+  flex-direction: column-reverse;
+}
+
+.ServiceDetailedSectionVertical .mainContent {
+  flex-direction: column;
+}
+
+.ServiceDetailedSectionVertical .mainContent {
+  flex-direction: column-reverse;
+}
+
+.ServiceDetailedSectionVertical .imgContainer {
+  width: 90vw !important;
+  height: 50vh !important;
+}
+
+.ServiceDetailedSectionVertical .textContent {
+  max-width: 90vw !important;
+}
+
+.ServiceDetailedSectionVertical p {
+  max-width: 90vw !important;
+}
+
+.ServiceDetailedSectionVerticalReversed .imgContainer {
+  width: 90vw !important;
+  height: 50vh !important;
+}
+
+.ServiceDetailedSectionVerticalReversed .textContent {
+  max-width: 90vw !important;
+}
+
+.ServiceDetailedSectionVerticalReversed p {
+  max-width: 90vw !important;
+}
+
+.ServiceDetailedSection .sectionHeader {
+  text-align: center;
+  font-size: 2.2rem !important;
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-transform: uppercase;
+  max-width: 90vw;
+  margin: 1rem auto;
+}
+
+.ServiceDetailedSection .textContent {
+  max-width: 50vw;
+}
+
+.ServiceDetailedSection .textOnly {
+  max-width: 90vw !important;
+}
+
+.ServiceDetailedSection .textOnly p {
+  max-width: 100% !important;
+}
+
+.ServiceDetailedSection .imgContainer {
+  position: relative;
+  width: 40vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ServiceDetailedSection .imgContainer img {
+  object-fit: contain;
+}
+
+.ServiceDetailedSection p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  max-width: 45vw;
+}
+
+.ServiceDetailedSection .textContent div span {
+  font-size: 1.3rem !important;
+}
+
+@media screen and (max-width: 800px) {
+  .ServiceDetailedSection .mainContent {
+    flex-direction: column-reverse;
+  }
+
+  .ServiceDetailedSection .sectionHeader {
+    font-size: 1.8rem !important;
+  }
+
+  .ServiceDetailedSection .imgContainer {
+    width: 90vw !important;
+    max-height: 40vh;
+    margin: 0 auto !important;
+  }
+
+  .ServiceDetailedSectionVerticalReversed .imgContainer {
+    height: 20vh !important;
+  }
+  .ServiceDetailedSection h1 {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 1.2rem !important;
+    text-transform: uppercase;
+  }
+  .ServiceDetailedSection h1 {
+    text-align: center;
+    font-size: 1rem !important;
+  }
+  .ServiceDetailedSection .textContent {
+    max-width: 90vw;
+  }
+
+  .ServiceDetailedSection p {
+    max-width: unset;
+  }
+}

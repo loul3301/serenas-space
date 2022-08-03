@@ -1,0 +1,67 @@
+.Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+  border-bottom: 2px solid var(--primary-green);
+}
+
+.Header .textContent {
+  max-width: 50vw;
+  height: fit-content;
+  font-family: 'Quicksand';
+  text-align: center;
+}
+
+.Header .imgContainer {
+  position: relative;
+  width: 40vw;
+  height: 50vh;
+}
+
+.Header .imgContainer img {
+  object-fit: contain;
+}
+
+.Header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 2.5vw;
+  margin: 0.5rem 0;
+}
+
+.Header h1 span {
+  color: var(--primaryAccent);
+}
+
+.Header h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: normal;
+  font-size: 2vw;
+}
+
+@media screen and (max-width: 850px) {
+  .Header {
+    flex-direction: column-reverse;
+  }
+
+  .Header .imgContainer {
+    width: 95vw;
+    margin-bottom: 1rem;
+  }
+
+  .Header .textContent {
+    max-width: 80vw;
+  }
+
+  .Header h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .Header h2 {
+    font-size: 1.5rem;
+    max-width: 100% !important;
+    text-align: center !important;
+  }
+}
